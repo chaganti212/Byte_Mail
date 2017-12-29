@@ -1,0 +1,11 @@
+<ul class="inbox-nav inbox-divider">
+    <li [ngClass]="{'active':actionslist.inbox}" (click)="onClick('inbox')" >
+         <a [routerLink]="['inbox']" > Inbox <span class="label label-danger pull-right">2</span></a>
+    </li>
+    <li [ngClass]="{'active':actionslist.SentMail}" (click)="onClick('SentMail')" >
+        <a   [routerLink]="['sent-mail']" >Sent Mail</a>
+    </li>
+    <li [ngClass]="{'active':actionslist.trash}" (click)="onClick('trash')" >
+        <a  [routerLink]="['trash']" > Trash</a>
+    </li>
+</ul>
